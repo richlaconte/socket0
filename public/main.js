@@ -59,3 +59,21 @@ let moveLeft = () => {
 let moveRight = () => {
     socket.emit('move', 'right');
 }
+
+// Keypress
+document.addEventListener('keypress', (e) => {
+    switch (e.key) {
+        case 'w':
+            moveUp();
+            break;
+        case 's':
+            moveDown();
+            break;
+        case 'a':
+            moveLeft();
+            break;
+        case 'd':
+            moveRight();
+            break;
+    }
+})
