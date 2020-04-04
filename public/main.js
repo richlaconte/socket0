@@ -3,7 +3,7 @@ let getById = (id) => {
 }
 
 // EMIT EVENT
-socket.emit('chat message', 'test');
+//socket.emit('chat message', 'test');
 
 socket.on('game', (data) => {
     console.log(data);
